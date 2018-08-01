@@ -1,0 +1,569 @@
+/* --Base Element styles-- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+.container {
+  margin:0;
+  padding: 2em;
+  text-align: center;
+  font-family: 'Kirang-Haerang', sans-serif;
+  color: #65626D;
+  background: #CFC3E3;
+}
+
+/* --Base Layout Styles-- */
+
+a {
+	color: blueviolet;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aquamarine;
+  text-decoration: underline;
+}
+
+/* --Float fixes-- */
+
+
+.clearfix {
+  overflow: auto;
+}
+
+/* -- Prevent containers collapsing --*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear:both;
+
+}
+
+/* -- Prevent containers collapsing --*/
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear:both;
+
+}
+
+
+/*
+a.social:hover {
+  opacity: 1;
+}
+*/
+
+/* --Media Queries */
+/* --for mobiles-- */
+@media screen and (min-width: 320px) {
+
+  p {
+    border: solid .25em red;
+  }
+
+  .main-nav h1 {
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    text-shadow: 1px 1px #F8F7FB;
+  }
+
+  .main-nav ul {
+    padding-left: 0;
+  }
+
+  .main-nav li {
+    text-align: center;
+    display: block;
+    font-size: 1em;
+    text-shadow: 1px 1px #F8F7FB;
+    margin: 1em;
+    padding: 1em 0em;
+    background-color: #D7CDED;
+    border-radius: 10%;
+  }
+
+  .intro img {
+    max-width:100%;
+    max-height: auto;
+    border-radius: 50%;
+    border: 5px solid white;
+  }
+
+  .intro h1 {
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+  .portfolio h1{
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1em;
+    padding: 1em 0em;
+    background-color: #D7CDED;
+    border-radius: 10%;
+  }
+
+  .portfolio h2 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: .95em;
+  }
+
+  .portfolio img {
+    max-width:100%;
+    max-height: auto;
+  }
+
+  #contact h1 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1em;
+    padding: 1em 0em;
+    background-color: #D7CDED;
+    border-radius: 10%;
+  }
+
+  #contact p {
+    font-size: .8em;
+  }
+
+  #contact li {
+    display: block;
+    font-size: 1em;
+    margin: 1em;
+  }
+
+  #contact ul {
+    padding-left: 0;
+  }
+
+  #contact h3 {
+    font-size: 1em;
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: .5em;
+  }
+
+  #contact .top {
+    display: block;
+    width: 50%;
+    float: right;
+    padding: .5em;
+  }
+
+}
+
+/* @media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
+
+  header {
+    float: left;
+    font-size: 1.4em;
+  }
+
+  .main-nav li {
+    float: right;
+    width: 60%;
+    padding: 15px 1%;
+  }
+
+  .intro {
+    float: left;
+    width: 57%;
+  }
+
+  .intro img {
+    float: right;
+    width: 38%;
+  }
+
+} */
+
+
+/* --For tablets-- */
+@media screen and (min-width: 768px) {
+
+  p {
+    border: solid .25em red;
+  }
+
+  .main-nav h1 {
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    text-shadow: 1px 1px #F8F7FB;
+  }
+
+  .main-nav ul {
+    padding-left: 0;
+  }
+
+  .main-nav li {
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #F8F7FB;
+    margin: 1em;
+    padding: 1em 2em;
+    background-color: #CFC3E3;
+  }
+
+  .intro img {
+    display: block;
+    max-width:38%;
+    max-height: auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    float:right;
+  }
+
+  .intro h1 {
+    max-width: 50%;
+    display: block;
+    font-size: 1.5em;
+    font-weight: normal;
+
+    margin: 1em;
+    float: left;
+  }
+
+  .portfolio h1{
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1.5em;
+    padding: 1em 0em;
+    background-color: #CFC3E3;
+  }
+
+  .portfolio h2 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1.2em;
+  }
+
+
+ .marketing {
+    float: left;
+    display: inline-block;
+    max-width: 45%;
+  }
+
+ .search {
+    float: right;
+    display: inline-block;
+    max-width: 45%;
+  }
+
+ .travel {
+    float: left;
+    display: inline-block;
+    max-width: 45%;
+  }
+
+ .map {
+    float:right;
+    display: inline-block;
+    max-width: 45%;
+  }
+
+ .photos {
+    float: left;
+    display: inline-block;
+    max-width: 45%;
+  }
+
+  .calc {
+    float: right;
+    display: inline-block;
+    max-width: 45%;
+  }
+
+  #contact h1 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1em;
+    padding: 1em 0em;
+    background-color: #CFC3E3;
+    border-radius: 10%;
+  }
+
+  #contact p {
+    font-size: .8em;
+  }
+
+  #contact li {
+    display: block;
+    font-size: 1em;
+    margin: 1em;
+  }
+
+  #contact ul {
+    padding-left: 0;
+  }
+
+  #contact h3 {
+    font-size: 1em;
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: .5em;
+  }
+
+  #contact .top {
+    display: block;
+    width: 50%;
+    float: right;
+    padding: .5em;
+  }
+
+
+/* --For desktops-- */
+@media screen and (min-width: 1024px) {
+
+  p {
+    border: solid .25em red;
+  }
+
+  .main-nav h1 {
+    text-align: center;
+    display: block;
+    font-size: 2em;
+    text-shadow: 1px 1px #F8F7FB;
+    padding: 1.5em;
+    margin: 1em 0;
+    float: left;
+  }
+
+  .main-nav ul {
+    padding-left: 0;
+  }
+
+  .main-nav li {
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    text-shadow: 1px 1px #F8F7FB;
+    margin: 1em;
+    padding: 1em 2em;
+    background-color: #CFC3E3;
+    padding: 1.5em;
+    margin: 2em 0;
+    float: right;
+  }
+
+  .intro img {
+    display: block;
+    max-width:38%;
+    max-height: auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    float:right;
+  }
+
+  .intro h1 {
+    max-width: 50%;
+    display: block;
+    font-size: 1.5em;
+    font-weight: normal;
+
+    margin: 1em;
+    float: left;
+  }
+
+  .portfolio h1{
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1.5em;
+    padding: 1em 0em;
+    background-color: #CFC3E3;
+  }
+
+  .portfolio h2 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1.2em;
+  }
+
+
+ .marketing {
+   display: inline-block;
+   width: 33%;
+   float: left;
+  }
+
+ .search {
+   display: inline-block;
+   width: 33%;
+   float: none;
+  }
+
+ .travel {
+   display: inline-block;
+   width: 33%;
+   float: right;
+  }
+
+ .map {
+   display: inline-block;
+   width: 33%;
+   float: left;
+  }
+
+ .photos {
+   display: inline-block;
+   width: 33%;
+   float: none;
+  }
+
+  .calc {
+    display: inline-block;
+    width: 33%;
+    float: right;
+  }
+
+  #contact h1 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1em;
+    padding: 1em 0em;
+    background-color: #CFC3E3;
+    border-radius: 10%;
+  }
+
+  #contact p {
+    font-size: .8em;
+  }
+
+  #contact li {
+    display: block;
+    font-size: 1em;
+    margin: 1em;
+  }
+
+  #contact ul {
+    padding-left: 0;
+  }
+
+  #contact h3 {
+    font-size: 1em;
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: .5em;
+  }
+
+  #contact .top {
+    display: block;
+    width: 50%;
+    float: right;
+    padding: .5em;
+  }
+
+
+  /* p {
+    border: solid 1px red;
+  }
+
+  div .main-nav {
+    border: solid 1px red;
+    padding-bottom: 0;
+    width: 100%;
+  }
+
+  .main-nav h1 {
+    text-shadow: 1px 1px #786F8C;
+    position: center;
+    display: block;
+    font-size: 3em;
+    margin-right: 0;
+    float: left;
+    max-width: 40%;
+  }
+
+  .main-nav li {
+    text-shadow: 1px 1px #786F8C;
+    display: inline;
+    font-size: 2em;
+    margin: 1em auto;
+    float: right;
+    width: 20%;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .intro h1 {
+    float: left;
+    width: 60%;
+    margin-top: 4em;
+    border: solid 1px red;
+    font-weight: normal;
+  }
+
+
+  .intro img {
+    margin-top: 50px;
+    width: 20em;
+    height: 20em;
+    border-radius: 50%;
+    border: 5px solid white;
+    float: right;
+    margin-top: 1em;
+  }
+
+
+  div img {
+    max-width: 100%;
+  }
+
+  .top-line {
+    clear: both;
+  }
+
+  .bottom-line {
+    clear: both;
+  }
+
+  .portfolio .marketing {
+    display: inline-block;
+    width: 33%;
+    float: left;
+  }
+
+  .portfolio .search {
+    display: inline-block;
+    width: 33%;
+    float: none;
+  }
+
+  .portfolio .travel {
+    display: inline-block;
+    width: 33%;
+    float: right;
+  }
+
+  .portfolio .map {
+    display: inline-block;
+    width: 33%;
+    float: left;
+  }
+
+  .portfolio .photos {
+    display: inline-block;
+    width: 33%;
+    float: none;
+  }
+
+  .portfolio .calc {
+    display: inline-block;
+    width: 33%;
+    position: relative;
+    float: right;
+  } */
+
+
+}
