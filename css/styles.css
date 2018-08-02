@@ -5,15 +5,6 @@
 
 body {
   margin: 0;
-
-}
-.container {
-  margin:0;
-  padding: 2em;
-  text-align: center;
-  font-family: 'Kirang-Haerang', sans-serif;
-  color: #65626D;
-  background: #CFC3E3;
 }
 
 /* --Base Layout Styles-- */
@@ -54,15 +45,18 @@ a:hover {
 }
 
 
-/*
-a.social:hover {
-  opacity: 1;
-}
-*/
-
 /* --Media Queries */
 /* --for mobiles-- */
 @media screen and (min-width: 320px) {
+
+  .container {
+    margin:0;
+    padding: 2em;
+    text-align: center;
+    font-family: 'Kirang-Haerang', sans-serif;
+    color: #65626D;
+    background: #CFC3E3;
+  }
 
 
   .main-nav h1 {
@@ -72,11 +66,11 @@ a.social:hover {
     text-shadow: 1px 1px #F8F7FB;
   }
 
-  .main-nav ul {
+  .main-nav nav {
     padding-left: 0;
   }
 
-  .main-nav li {
+  .main-nav a {
     text-align: center;
     display: block;
     font-size: 1em;
@@ -96,6 +90,29 @@ a.social:hover {
   .intro h1 {
     font-size: 1em;
     font-weight: normal;
+  }
+
+  .skills h1 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1em;
+    padding: 1em 0em;
+    background-color: #D7CDED;
+    border-radius: 10%;
+  }
+
+  .skills ul {
+    padding-left: 0;
+  }
+
+  .skills li {
+    display: inline-block;
+    float: inherit;
+    font-size: .95em;
+    background-color: #D7CDED;
+    border-style: inset;
+    border-radius: 10%;
+    padding: .3em;
+    margin: 1em;
   }
 
   .portfolio h1{
@@ -155,36 +172,17 @@ a.social:hover {
 
 }
 
-/* @media only screen and (min-width: 768px),
-       only screen and (min-width: 700px) and (orientation: landscape) {
-
-  header {
-    float: left;
-    font-size: 1.4em;
-  }
-
-  .main-nav li {
-    float: right;
-    width: 60%;
-    padding: 15px 1%;
-  }
-
-  .intro {
-    float: left;
-    width: 57%;
-  }
-
-  .intro img {
-    float: right;
-    width: 38%;
-  }
-
-} */
-
-
 /* --For tablets-- */
 @media screen and (min-width: 768px) {
 
+  .container {
+    margin:0;
+    padding: 2em;
+    text-align: center;
+    font-family: 'Kirang-Haerang', sans-serif;
+    color: #65626D;
+    background: #EFE8FB;
+  }
 
   .main-nav h1 {
     text-align: center;
@@ -193,16 +191,16 @@ a.social:hover {
     text-shadow: 1px 1px #F8F7FB;
   }
 
-  .main-nav ul {
+  .main-nav nav {
     padding-left: 0;
   }
 
-  .main-nav li {
+  .main-nav a {
     text-align: center;
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-shadow: 1px 1px #F8F7FB;
-    margin: 1em;
+    margin: .3em;
     padding: 1em 2em;
     background-color: #CFC3E3;
   }
@@ -223,6 +221,29 @@ a.social:hover {
 
     margin: 1em;
     float: left;
+  }
+
+  .skills h1 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 1.5em;
+    padding: 1em 0em;
+    background-color: #CFC3E3;
+    border-radius: 10%;
+  }
+
+  .skills ul {
+    padding-left: 0;
+  }
+
+  .skills li {
+    display: inline-block;
+    float: inherit;
+    font-size: 1.2em;
+    background-color: #CFC3E3;
+    border-style: inset;
+    border-radius: 10%;
+    padding: .3em;
+    margin: 1em;
   }
 
   .portfolio h1{
@@ -316,21 +337,45 @@ a.social:hover {
 /* --For desktops-- */
 @media screen and (min-width: 1024px) {
 
+  .container {
+    margin:0;
+    padding: 2em;
+    text-align: center;
+    font-family: 'Kirang-Haerang', sans-serif;
+    color: #65626D;
+    background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #75C8B8 95%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 95%, #75C8B8 95%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 90%, #FCF2A2 90%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 92%, #FCF2A2 92%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 85%, #F0C29E 85%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 89%, #F0C29E 89%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 80%, #E8BFC4 80%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 86%, #E8BFC4 86%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 75%, #B7A2BE 75%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 83%, #B7A2BE 83%),
+                      linear-gradient(175deg, rgba(0,0,0,0) 70%, #A3DEE8 70%),
+                      linear-gradient( 85deg, rgba(0,0,0,0) 80%, #A3DEE8 80%);
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
   .main-nav h1 {
     text-align: center;
     display: block;
-    font-size: 2em;
+    font-size: 2.2em;
     text-shadow: 1px 1px #F8F7FB;
     padding: 1.5em;
     margin: 1em 0;
     float: left;
   }
 
-  .main-nav ul {
+  .main-nav nav {
     padding-left: 0;
   }
 
-  .main-nav li {
+  .main-nav a {
     text-align: center;
     display: inline-block;
     font-size: 1.5em;
@@ -356,14 +401,36 @@ a.social:hover {
     display: block;
     font-size: 1.5em;
     font-weight: normal;
-
     margin: 1em;
     float: left;
   }
 
+  .skills h1 {
+    text-shadow: 1px 1px #F8F7FB;
+    font-size: 2.2em;
+    padding: 1em 0em;
+    background-color: #CFC3E3;
+    border-radius: 10%;
+  }
+
+  .skills ul {
+    padding-left: 0;
+  }
+
+  .skills li {
+    display: inline-block;
+    float: inherit;
+    font-size: 1.5em;
+    background-color: #CFC3E3;
+    border-style: inset;
+    border-radius: 10%;
+    padding: .3em;
+    margin: 1em;
+  }
+
   .portfolio h1{
     text-shadow: 1px 1px #F8F7FB;
-    font-size: 1.5em;
+    font-size: 2.2em;
     padding: 1em 0em;
     background-color: #CFC3E3;
   }
@@ -412,19 +479,19 @@ a.social:hover {
 
   #contact h1 {
     text-shadow: 1px 1px #F8F7FB;
-    font-size: 1em;
+    font-size: 2.2em;
     padding: 1em 0em;
     background-color: #CFC3E3;
     border-radius: 10%;
   }
 
   #contact p {
-    font-size: .8em;
+    font-size: 1.5em;
   }
 
   #contact li {
     display: block;
-    font-size: 1em;
+    font-size: 1.2em;
     margin: 1em;
   }
 
