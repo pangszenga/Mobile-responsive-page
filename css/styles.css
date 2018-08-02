@@ -64,9 +64,6 @@ a.social:hover {
 /* --for mobiles-- */
 @media screen and (min-width: 320px) {
 
-  p {
-    border: solid .25em red;
-  }
 
   .main-nav h1 {
     text-align: center;
@@ -92,7 +89,6 @@ a.social:hover {
 
   .intro img {
     max-width:100%;
-    max-height: auto;
     border-radius: 50%;
     border: 5px solid white;
   }
@@ -117,7 +113,6 @@ a.social:hover {
 
   .portfolio img {
     max-width:100%;
-    max-height: auto;
   }
 
   #contact h1 {
@@ -190,9 +185,6 @@ a.social:hover {
 /* --For tablets-- */
 @media screen and (min-width: 768px) {
 
-  p {
-    border: solid .25em red;
-  }
 
   .main-nav h1 {
     text-align: center;
@@ -218,7 +210,6 @@ a.social:hover {
   .intro img {
     display: block;
     max-width:38%;
-    max-height: auto;
     border-radius: 50%;
     border: 5px solid white;
     float:right;
@@ -320,14 +311,10 @@ a.social:hover {
     float: right;
     padding: .5em;
   }
-
+}
 
 /* --For desktops-- */
 @media screen and (min-width: 1024px) {
-
-  p {
-    border: solid .25em red;
-  }
 
   .main-nav h1 {
     text-align: center;
@@ -359,7 +346,6 @@ a.social:hover {
   .intro img {
     display: block;
     max-width:38%;
-    max-height: auto;
     border-radius: 50%;
     border: 5px solid white;
     float:right;
@@ -461,109 +447,4 @@ a.social:hover {
     float: right;
     padding: .5em;
   }
-
-
-  /* p {
-    border: solid 1px red;
-  }
-
-  div .main-nav {
-    border: solid 1px red;
-    padding-bottom: 0;
-    width: 100%;
-  }
-
-  .main-nav h1 {
-    text-shadow: 1px 1px #786F8C;
-    position: center;
-    display: block;
-    font-size: 3em;
-    margin-right: 0;
-    float: left;
-    max-width: 40%;
-  }
-
-  .main-nav li {
-    text-shadow: 1px 1px #786F8C;
-    display: inline;
-    font-size: 2em;
-    margin: 1em auto;
-    float: right;
-    width: 20%;
-  }
-
-  .intro {
-    width: 100%;
-  }
-
-  .intro h1 {
-    float: left;
-    width: 60%;
-    margin-top: 4em;
-    border: solid 1px red;
-    font-weight: normal;
-  }
-
-
-  .intro img {
-    margin-top: 50px;
-    width: 20em;
-    height: 20em;
-    border-radius: 50%;
-    border: 5px solid white;
-    float: right;
-    margin-top: 1em;
-  }
-
-
-  div img {
-    max-width: 100%;
-  }
-
-  .top-line {
-    clear: both;
-  }
-
-  .bottom-line {
-    clear: both;
-  }
-
-  .portfolio .marketing {
-    display: inline-block;
-    width: 33%;
-    float: left;
-  }
-
-  .portfolio .search {
-    display: inline-block;
-    width: 33%;
-    float: none;
-  }
-
-  .portfolio .travel {
-    display: inline-block;
-    width: 33%;
-    float: right;
-  }
-
-  .portfolio .map {
-    display: inline-block;
-    width: 33%;
-    float: left;
-  }
-
-  .portfolio .photos {
-    display: inline-block;
-    width: 33%;
-    float: none;
-  }
-
-  .portfolio .calc {
-    display: inline-block;
-    width: 33%;
-    position: relative;
-    float: right;
-  } */
-
-
 }
