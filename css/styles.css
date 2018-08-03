@@ -1,55 +1,55 @@
-/* --Base Element styles-- */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Amatic SC', 'cursive', Helvetica, Arial, sans-serif, arial;
-  line-height: 1.5;
-}
-
-/* --Base Layout Styles-- */
-
-a {
-	color: blueviolet;
-  text-decoration: none;
-}
-
-a:hover {
-  color: aquamarine;
-  text-decoration: underline;
-}
-
-/* --Float fixes-- */
-
-
-.clearfix {
-  overflow: auto;
-}
-
-/* -- Prevent containers collapsing --*/
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear:both;
-
-}
-
-/* -- Prevent containers collapsing --*/
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear:both;
-
-}
-
 
 /* --Media Queries */
 /* --for mobiles-- */
 @media screen and (min-width: 320px) {
+  /* --Base Element styles-- */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Amatic SC', 'cursive', Helvetica, Arial, sans-serif, arial;
+    line-height: 1.5;
+  }
+
+  /* --Base Layout Styles-- */
+
+  a {
+  	color: blueviolet;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: aquamarine;
+    text-decoration: underline;
+  }
+
+  /* --Float fixes-- */
+
+
+  .clearfix {
+    overflow: auto;
+  }
+
+  /* -- Prevent containers collapsing --*/
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear:both;
+
+  }
+
+  /* -- Prevent containers collapsing --*/
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear:both;
+
+  }
+/* -- Content-- */
 
   .container {
     margin:0;
@@ -164,12 +164,16 @@ a:hover {
     padding: .5em;
   }
 
-  #contact .top {
+  #contact nav {
+    display: none;
+  }
+
+  .footer .enabled {
     display: block;
-    width: 50%;
-    float: right;
+    margin: 0;
     padding: .5em;
   }
+
 
 }
 
@@ -318,20 +322,26 @@ a:hover {
   }
 
   #contact h3 {
-    font-size: 1em;
+    font-size: 2em;
     display: block;
-    width: 50%;
+    width: 40%;
     float: left;
     margin: 0;
     padding: .5em;
   }
 
-  #contact .top {
-    display: block;
-    width: 50%;
-    float: right;
-    padding: .5em;
+  #contact nav {
+    display: inline-block;
+    margin: 0;
+    width: 60%;
+    font-size: 2em;
+    padding:.5em 3em;
   }
+
+  .footer .enabled {
+    display: none;
+  }
+
 }
 
 /* --For desktops-- */
@@ -365,26 +375,28 @@ a:hover {
     display: block;
     font-size: 2.2em;
     text-shadow: 1px 1px #F8F7FB;
+    max-width: 40%;
     padding: 1.5em;
     margin: 1em 0;
     float: left;
   }
 
+
   .main-nav nav {
     padding-left: 0;
-  }
-
-  .main-nav a {
     text-align: center;
     display: inline-block;
     font-size: 1.5em;
     text-shadow: 1px 1px #F8F7FB;
-    margin: 1em;
-    padding: 1em 2em;
+    max-width: 60%;
     background-color: #CFC3E3;
-    padding: 1.5em;
     margin: 2em 0;
     float: right;
+  }
+
+  .main-nav a {
+    padding: .5em;
+
   }
 
   .intro img {
@@ -499,18 +511,25 @@ a:hover {
   }
 
   #contact h3 {
-    font-size: 1em;
+    font-size: 2em;
     display: block;
-    width: 50%;
+    width: 40%;
     float: left;
     margin: 0;
     padding: .5em;
   }
 
-  #contact .top {
-    display: block;
-    width: 50%;
-    float: right;
-    padding: .5em;
+  #contact nav {
+    display: inline-block;
+    margin: 0;
+    width: 60%;
+    font-size: 2em;
+    padding:.5em 3em;
   }
+
+  .footer .enabled {
+    display: none;
+  }
+
+
 }
